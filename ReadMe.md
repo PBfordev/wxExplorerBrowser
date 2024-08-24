@@ -13,7 +13,9 @@ Requirements
 
 IExplorerBrowser interface is available only on Windows Vista and newer. 
 
-To build wxExplorerBrowser, wxWidgets v3.1 or newer and a compiler supporting C++11 with up to date Windows header files are required. Tested with MSVC 2017, MSVC 2019, and mingw-w64 (i686-8.1.0-posix-dwarf-rt_v6-rev0).
+To build wxExplorerBrowser, wxWidgets v3.2 or newer and a compiler supporting C++11 with up to date Windows header files are required. 
+
+Tested with MSVC 2017, MSVC 2019, MSVC 2022, and GCC (MSYS2 package mingw-w64-ucrt-x86_64).
 
 Using
 ---------
