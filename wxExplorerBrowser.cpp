@@ -1415,6 +1415,9 @@ bool wxExplorerBrowser::Create(wxWindow* parent,
     m_host = new wxWindow(this, wxID_ANY, wxDefaultPosition, wxDefaultSize,
         wxBORDER_NONE | wxWANTS_CHARS | wxCLIP_CHILDREN | wxCLIP_SIBLINGS,
         wxS("wxExplorerBrowserWindow"));
+#if wxCHECK_VERSION(3, 3, 0)
+    m_host->MSWDisableComposited();
+#endif // #if wxCHECK_VERSION(3, 3, 0)
 
     m_impl = new wxExplorerBrowserImpl(m_host);
 
